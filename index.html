@@ -6,9 +6,30 @@
         </title>
     </head>
     <body>
-        <input type='text' class='phoneNumberValidation' />
-        <input type='text' class='phoneNumberValidation' />
-        <input type='text' class='phoneNumberValidation' />
+        <h1>Поля для ввода примеров номера телефона</h1>
+        <p>
+            "8" заменяется на "+7",
+            если начать вводить "9",
+            она будет заменена на "+7(9...". 
+            Лишние символы отбрасываются.
+        </p>
+        <div style="display: flex;">
+            <p style="display: inline-block;padding:10px;">
+                +7987654321011111
+                <br />
+                <input type='text' class='phoneNumberValidation' />
+            </p>
+            <p style="display: inline-block;padding:10px;">
+                987-654-32-10
+                <br />
+                <input type='text' class='phoneNumberValidation' />
+            </p>
+            <p style="display: inline-block;padding:10px;">
+                89876543210
+                <br />
+                <input type='text' class='phoneNumberValidation' />
+            </p>
+        </div>
         <script type="text/javascript" src="phoneNumberValidation.js"></script>
     </body>
 </html>
