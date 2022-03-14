@@ -33,12 +33,14 @@ const phoneFormat = function(e) {
       content.slice(9,11).join('')
   ]
 
+  !content.length ? 
+      e.target.value = '' :
   // division
-  e.target.value = countryCode.length ? `+${countryCode}` : '';
-  if(operatorCode.length) e.target.value += `(${operatorCode}`;
-  if(number3.length) e.target.value += `)${number3}`;
-  if(number21.length) e.target.value += `-${number21}`;
-  if(number22.length) e.target.value += `-${number22}`;
+      e.target.value = countryCode.length ? `+${countryCode}` : '';
+      if(operatorCode.length) e.target.value += `(${operatorCode}`;
+      if(number3.length) e.target.value += `)${number3}`;
+      if(number21.length) e.target.value += `-${number21}`;
+      if(number22.length) e.target.value += `-${number22}`;
 }
 
 for(let i=0; i<phoneFields.length; i++) {
